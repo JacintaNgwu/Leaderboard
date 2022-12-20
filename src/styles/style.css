@@ -11,92 +11,92 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #1c1c1c;
-    display: grid;
-    padding: 32px;
+  font-family: 'Poppins', sans-serif;
+  color: #1c1c1c;
+  display: grid;
+  padding: 32px;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 button {
-    width: 120px;
-    padding: 10px;
-    font-weight: 700;
-    border: 2px solid #1c1c1c;
-    cursor: pointer;
+  width: 120px;
+  padding: 10px;
+  font-weight: 700;
+  border: 2px solid #1c1c1c;
+  cursor: pointer;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    width: auto;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  width: auto;
+  margin-top: 30px;
 }
 
 .refresh {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #refresh {
-    box-shadow:  3px 2px;
+  box-shadow: 3px 2px;
 }
 
 #display-scores {
-    display: grid;
-    gap: 30px;
-    padding: 20px;
-    margin-left: 10%;
+  display: grid;
+  gap: 30px;
+  padding: 20px;
+  margin-left: 10%;
 }
 
 .score-list {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #1c1c1c;
 }
 
 li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
 }
 
 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .score-list li:nth-child(even) {
-    background: #dddddd;
+  background: #ddd;
 }
 
 #add-scores {
-    position: relative;
-    padding: 20px;
-    gap: 50px;
-    left: 20%;
+  position: relative;
+  padding: 20px;
+  gap: 50px;
+  left: 20%;
 }
 
 form {
-    display: grid;
-    position: absolute;
-    gap: 20px;
-    top: 28%;
+  display: grid;
+  position: absolute;
+  gap: 20px;
+  top: 28%;
 }
 
 input {
-    font-family: inherit;
-    font-size: inherit;
-    width: 430px;
-    padding: 5px;
-    color: #1c1c1c;
-    border: 3px solid #1c1c1c;
+  font-family: inherit;
+  font-size: inherit;
+  width: 430px;
+  padding: 5px;
+  color: #1c1c1c;
+  border: 3px solid #1c1c1c;
 }
 
 #right {
-   box-shadow:  3px 2px;
-   margin-left: 70%;
-  }
+  box-shadow: 3px 2px;
+  margin-left: 70%;
+}
