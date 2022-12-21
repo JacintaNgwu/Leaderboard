@@ -23,6 +23,7 @@ h1 {
 
 button {
   width: 120px;
+  height: 40px;
   padding: 10px;
   font-weight: 700;
   border: 2px solid #1c1c1c;
@@ -82,9 +83,8 @@ span {
 
 form {
   display: grid;
-  position: absolute;
   gap: 20px;
-  top: 28%;
+  margin-top: 50px;
 }
 
 input {
@@ -98,5 +98,5 @@ input {
 
 #right {
   box-shadow: 3px 2px;
-  margin-left: 70%;
+  margin-left: 66%;
 }
