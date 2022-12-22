@@ -15,10 +15,7 @@ body {
   color: #1c1c1c;
   display: grid;
   padding: 32px;
-}
-
-h1 {
-  font-size: 40px;
+  background: rgb(201, 73, 201);
 }
 
 button {
@@ -40,6 +37,7 @@ main {
 .refresh {
   display: flex;
   justify-content: space-between;
+  font-size: 25px;
 }
 
 #refresh {
@@ -56,7 +54,8 @@ main {
 .score-list {
   display: flex;
   flex-direction: column;
-  border: 3px solid #1c1c1c;
+  border: 5px solid #1c1c1c;
+  border-radius: 5px;
 }
 
 li {
@@ -70,8 +69,12 @@ span {
   font-weight: bold;
 }
 
+.score-list li:nth-child(odd) {
+  background: rgb(175, 100, 26);
+}
+
 .score-list li:nth-child(even) {
-  background: #ddd;
+  background: rgb(209, 198, 198);
 }
 
 #add-scores {
@@ -79,6 +82,7 @@ span {
   padding: 20px;
   gap: 50px;
   left: 20%;
+  font-size: 20px;
 }
 
 form {
@@ -94,9 +98,164 @@ input {
   padding: 5px;
   color: #1c1c1c;
   border: 3px solid #1c1c1c;
+  border-radius: 5px;
 }
 
 #right {
   box-shadow: 3px 2px;
   margin-left: 66%;
+}
+
+.bouncing-text {
+  position: relative;
+  display: flex;
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 30px;
+}
+
+.l,
+.d,
+.o {
+  color: brown;
+  text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;
+}
+
+.e,
+.b {
+  color: green;
+  text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;
+}
+
+.a {
+  color: olive;
+  text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  10% {
+    transform: scale(1.1, .9) translateY(0);
+  }
+
+  30% {
+    transform: scale(.9, 1.1) translateY(-55px);
+  }
+
+  50% {
+    transform: scale(1.05, .95) translateY(0);
+  }
+
+  58% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+
+  65% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.l {
+  animation: bounce 1s ease infinite;
+}
+
+.e {
+  animation: bounce 1s ease infinite .1s;
+}
+
+.a {
+  animation: bounce 1s ease infinite .2s;
+}
+
+.d {
+  animation: bounce 1s ease infinite .3s;
+}
+
+.r {
+  animation: bounce 1s ease infinite .4s;
+}
+
+.b {
+  animation: bounce 1s ease infinite .5s;
+}
+
+.o {
+  animation: bounce 1s ease infinite .6s;
+}
+
+.bouncing-text::before,
+.bouncing-text::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 50px;
+  height: 5px;
+  border-radius: 50%;
+  top: 82px;
+  z-index: -1;
+}
+
+.shadow,
+.shadow-two {
+  position: absolute;
+  top: 82px;
+  z-index: -1;
+}
+
+.shadow::before,
+.shadow::after,
+.shadow-two::before,
+.shadow-two::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 80px;
+  height: 5px;
+  border-radius: 50%;
+  top: 0;
+}
+
+.bouncing-text::before {
+  left: 10px;
+  animation: scale 1s linear infinite;
+}
+
+@keyframes scale {
+  0% { transform: scaleX(1); }
+  25% { transform: scaleX(0.4); }
+  50% { transform: scaleX(1); }
+  75% { transform: scaleX(0.9); }
+  100% { transform: scaleX(1); }
+}
+
+.bouncing-text::after {
+  left: 80px;
+  animation: scale 1s linear infinite .1s;
+}
+
+.shadow::before {
+  left: 150px;
+  animation: scale 1s linear infinite .2s;
+}
+
+.shadow::after {
+  left: 250px;
+  animation: scale 1s linear infinite .3s;
+}
+
+.shadow-two::before {
+  left: 350px;
+  animation: scale 1s linear infinite .4s;
+}
+
+.shadow-two::after {
+  left: 450px;
+  animation: scale 1s linear infinite .5s;
 }
