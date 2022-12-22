@@ -127,7 +127,8 @@ input {
   text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;
 }
 
-.a {
+.a,
+.r {
   color: olive;
   text-shadow: 0 3px grey, 0 5px grey, 0 7px grey;
 }
@@ -138,15 +139,15 @@ input {
   }
 
   10% {
-    transform: scale(1.1, .9) translateY(0);
+    transform: scale(1.1, 0.9) translateY(0);
   }
 
   30% {
-    transform: scale(.9, 1.1) translateY(-55px);
+    transform: scale(0.9, 1.1) translateY(-55px);
   }
 
   50% {
-    transform: scale(1.05, .95) translateY(0);
+    transform: scale(1.05, 0.95) translateY(0);
   }
 
   58% {
@@ -167,27 +168,27 @@ input {
 }
 
 .e {
-  animation: bounce 1s ease infinite .1s;
+  animation: bounce 1s ease infinite 0.1s;
 }
 
 .a {
-  animation: bounce 1s ease infinite .2s;
+  animation: bounce 1s ease infinite 0.2s;
 }
 
 .d {
-  animation: bounce 1s ease infinite .3s;
+  animation: bounce 1s ease infinite 0.3s;
 }
 
 .r {
-  animation: bounce 1s ease infinite .4s;
+  animation: bounce 1s ease infinite 0.4s;
 }
 
 .b {
-  animation: bounce 1s ease infinite .5s;
+  animation: bounce 1s ease infinite 0.5s;
 }
 
 .o {
-  animation: bounce 1s ease infinite .6s;
+  animation: bounce 1s ease infinite 0.6s;
 }
 
 .bouncing-text::before,
@@ -237,25 +238,25 @@ input {
 
 .bouncing-text::after {
   left: 80px;
-  animation: scale 1s linear infinite .1s;
+  animation: scale 1s linear infinite 0.1s;
 }
 
 .shadow::before {
   left: 150px;
-  animation: scale 1s linear infinite .2s;
+  animation: scale 1s linear infinite 0.2s;
 }
 
 .shadow::after {
   left: 250px;
-  animation: scale 1s linear infinite .3s;
+  animation: scale 1s linear infinite 0.3s;
 }
 
 .shadow-two::before {
   left: 350px;
-  animation: scale 1s linear infinite .4s;
+  animation: scale 1s linear infinite 0.4s;
 }
 
 .shadow-two::after {
   left: 450px;
-  animation: scale 1s linear infinite .5s;
+  animation: scale 1s linear infinite 0.5s;
 }
