@@ -52,7 +52,7 @@
 
 > Click the link below to deploy this project.
 
-- [Live Demo Link](https://jacintangwu.github.io/Leaderboard/)
+- [Live Demo Link](https://jacintangwu.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
