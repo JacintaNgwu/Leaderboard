@@ -36,7 +36,7 @@
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
-> The Leaderboard website is an application that displays scores submitted bt different players. It allows you to submit your scores and also preserve the data.
+> The Leaderboard website is an application that displays scores submitted by different players. It allows you to submit your scores and also preserve the data.
 
 **[your_project__name]** is a...
 
