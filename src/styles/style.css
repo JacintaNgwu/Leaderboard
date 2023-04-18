@@ -16,6 +16,7 @@ body {
   display: grid;
   padding: 32px;
   background: rgb(201, 73, 201);
+  overflow: hidden;
 }
 
 button {
