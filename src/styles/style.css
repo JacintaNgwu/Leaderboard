@@ -16,7 +16,6 @@ body {
   display: grid;
   padding: 32px;
   background: rgb(201, 73, 201);
-  overflow: hidden;
 }
 
 button {
@@ -50,6 +49,11 @@ main {
   gap: 30px;
   padding: 20px;
   margin-left: 10%;
+}
+
+.player-list {
+  height: 500px; 
+  overflow: auto;
 }
 
 .score-list {
