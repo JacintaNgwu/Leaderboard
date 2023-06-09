@@ -116,7 +116,7 @@ input {
   display: flex;
   font-size: 70px;
   font-weight: bolder;
-  margin: 30px;
+  margin: 10px, 20px, 30px, 40px;
 }
 
 .l,
