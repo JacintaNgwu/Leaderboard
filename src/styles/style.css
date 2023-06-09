@@ -86,7 +86,6 @@ span {
   position: relative;
   padding: 20px;
   gap: 50px;
-  left: 20%;
   font-size: 20px;
 }
 
@@ -116,7 +115,7 @@ input {
   display: flex;
   font-size: 70px;
   font-weight: bolder;
-  margin: 10px, 20px, 30px, 40px;
+  margin: 10px 20px 30px 40px;
 }
 
 .l,
